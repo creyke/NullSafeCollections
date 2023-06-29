@@ -8,6 +8,8 @@ Install the [NuGet package](https://www.nuget.org/packages/NullSafeCollections) 
 
 ## Example usage
 ```csharp
+using System;
+
 foreach (var item in NullSafe.Enumerable(foo))
 {
     Console.WriteLine(item);
