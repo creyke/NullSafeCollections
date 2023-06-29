@@ -10,6 +10,8 @@ Install the [NuGet package](https://www.nuget.org/packages/NullSafeCollections) 
 ```csharp
 using System;
 
+int[]? foo = null;
+
 foreach (var item in NullSafe.Enumerable(foo))
 {
     Console.WriteLine(item);
