@@ -2,24 +2,24 @@
 {
     public static class NullSafe
     {
-        public static T[] Array<T>(T[]? array)
+        public static T[] Array<T>(T[]? collection)
         {
-            return array is null ? System.Array.Empty<T>() : array;
+            return collection is null ? System.Array.Empty<T>() : collection;
         }
 
-        public static ICollection<T> Collection<T>(ICollection<T>? enumerable)
+        public static ICollection<T> Collection<T>(ICollection<T>? collection)
         {
-            return enumerable is null ? System.Array.Empty<T>() : enumerable;
+            return collection is null ? System.Array.Empty<T>() : collection;
         }
 
-        public static IEnumerable<T> Enumerable<T>(IEnumerable<T>? enumerable)
+        public static IEnumerable<T> Enumerable<T>(IEnumerable<T>? collection)
         {
-            return enumerable is null ? System.Array.Empty<T>() : enumerable;
+            return collection is null ? System.Array.Empty<T>() : collection;
         }
 
-        public static IList<T> List<T>(IList<T>? enumerable)
+        public static IList<T> List<T>(IList<T>? collection)
         {
-            return enumerable is null ? System.Array.Empty<T>() : enumerable;
+            return collection is null ? System.Array.Empty<T>() : collection;
         }
     }
 }
